@@ -4,6 +4,10 @@ c_compiler:
 - clang
 c_compiler_version:
 - '16'
+c_stdlib:
+- macosx_deployment_target
+c_stdlib_version:
+- '11.0'
 channel_sources:
 - conda-forge
 channel_targets:
@@ -14,6 +18,8 @@ cxx_compiler_version:
 - '16'
 ffmpeg:
 - '6'
+lcms2:
+- '2'
 libarchive:
 - '3.7'
 libiconv:
