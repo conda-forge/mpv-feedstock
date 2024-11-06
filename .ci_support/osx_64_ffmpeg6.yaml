@@ -1,9 +1,13 @@
 MACOSX_DEPLOYMENT_TARGET:
-- '11.0'
+- '10.15'
 c_compiler:
 - clang
 c_compiler_version:
 - '16'
+c_stdlib:
+- macosx_deployment_target
+c_stdlib_version:
+- '10.15'
 channel_sources:
 - conda-forge
 channel_targets:
@@ -14,6 +18,8 @@ cxx_compiler_version:
 - '16'
 ffmpeg:
 - '6'
+lcms2:
+- '2'
 libarchive:
 - '3.7'
 libiconv:
@@ -21,9 +27,11 @@ libiconv:
 libjpeg_turbo:
 - '3'
 macos_machine:
-- arm64-apple-darwin20.0.0
+- x86_64-apple-darwin13.4.0
+macos_min_version:
+- '10.15'
 target_platform:
-- osx-arm64
+- osx-64
 xz:
 - '5'
 zip_keys:
