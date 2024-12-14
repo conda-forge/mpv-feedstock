@@ -30,6 +30,7 @@ requirements:
     - libdrm  # [linux]
     - libarchive
     - libass
+    - expat
     - lcms2
     - uchardet  # [linux]
     - vapoursynth
