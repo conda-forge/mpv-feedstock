@@ -12,7 +12,7 @@ if [[ "${target_platform}" == osx-* ]]; then
 fi
 
 meson setup build \
-    -Dhtml-build=enabled \
+    -Dhtml-build=disabled \
     -Dmanpage-build=disabled \
     -Dlibmpv=true \
     -Dlibarchive=enabled \
