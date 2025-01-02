@@ -15,6 +15,7 @@ meson setup build \
     -Dhtml-build=disabled \
     -Dmanpage-build=disabled \
     -Dswift-build=disabled \
+    -Dcocoa=disabled \
     -Dlibmpv=true \
     -Dlibarchive=enabled \
     -Dzimg=disabled \
