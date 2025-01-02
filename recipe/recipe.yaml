@@ -23,7 +23,7 @@ requirements:
     - ninja
     - cmake
     - pkg-config
-    - docutils
+    # - docutils
   host:
     - ffmpeg
     - libjpeg-turbo
