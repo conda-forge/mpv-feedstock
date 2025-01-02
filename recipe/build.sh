@@ -13,6 +13,7 @@ fi
 
 meson setup build \
     -Dhtml-build=enabled \
+    -Dmanpage-build=disabled \
     -Dlibmpv=true \
     -Dlibarchive=enabled \
     -Dzimg=disabled \
