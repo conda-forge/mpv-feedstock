@@ -14,6 +14,7 @@ fi
 meson setup build \
     -Dhtml-build=disabled \
     -Dmanpage-build=disabled \
+    -Dswift-build=disabled \
     -Dlibmpv=true \
     -Dlibarchive=enabled \
     -Dzimg=disabled \
