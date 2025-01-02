@@ -19,6 +19,9 @@ meson setup build \
     -Dlibmpv=true \
     -Dlibarchive=enabled \
     -Dzimg=disabled \
+    -Dmacos-11-3-features=disabled \
+    -Dmacos-11-features=disabled \
+    -Dmacos-12-features=disabled \
     --sysconfdir=${PREFIX}/etc \
     --datadir=${PREFIX}/share \
     --prefix=${PREFIX} \
