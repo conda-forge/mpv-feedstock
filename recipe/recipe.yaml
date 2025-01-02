@@ -1,0 +1,67 @@
+context:
+  name: mpv
+  version: 0.39.0
+
+package:
+  name: ${{ name|lower }}
+  version: ${{ version }}
+
+source:
+  url: https://github.com/mpv-player/mpv/archive/refs/tags/v${{ version }}.tar.gz
+  sha256: 2ca92437affb62c2b559b4419ea4785c70d023590500e8a52e95ea3ab4554683
+
+build:
+  number: 0
+  skip: win
+
+requirements:
+  build:
+    - ${{ compiler('c') }}
+    - ${{ stdlib("c") }}
+    - ${{ compiler('cxx') }}
+    - meson
+    - ninja
+    - cmake
+    - pkg-config
+    - docutils
+  host:
+    - ffmpeg
+    - libjpeg-turbo
+    - libiconv
+    - if: linux
+      then: libdrm
+    - libarchive
+    - libass
+    - lcms2
+    - if: linux
+      then: uchardet
+    - vapoursynth
+    - yt-dlp
+    - xz
+    - zlib
+    - libplacebo
+  run:
+    - if: linux
+      then: uchardet
+    - vapoursynth
+    - yt-dlp
+
+tests:
+  - script:
+      - mpv --help
+
+about:
+  license: GPL-2.0-or-later
+  license_file: LICENSE.GPL
+  summary: Media player based on MPlayer and mplayer2
+  description: |
+    MPV is a free, open-source, and cross-platform media player based on
+    MPlayer and mplayer2. It supports a wide variety of video file formats,
+    audio and video codecs, and subtitle types.
+
+
+  homepage: https://mpv.io
+
+extra:
+  recipe-maintainers:
+    - Tobias-Fischer
