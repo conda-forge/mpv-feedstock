@@ -36,6 +36,7 @@ requirements:
     - yt-dlp
     - xz
     - zlib
+    - libplacebo
   run:
     - uchardet  # [linux]
     - vapoursynth
