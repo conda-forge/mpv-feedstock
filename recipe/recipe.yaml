@@ -40,6 +40,8 @@ requirements:
     - liblzma-devel
     - zlib
     - libplacebo
+    - expat
+    - freetype
   run:
     - if: linux
       then: uchardet
