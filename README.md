@@ -3,7 +3,7 @@ About mpv-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/mpv-feedstock/blob/main/LICENSE.txt)
 
-Home: https://mpv.io
+Home: https://mpv.io/
 
 Package license: GPL-2.0-or-later
 
@@ -12,7 +12,6 @@ Summary: Media player based on MPlayer and mplayer2
 MPV is a free, open-source, and cross-platform media player based on
 MPlayer and mplayer2. It supports a wide variety of video file formats,
 audio and video codecs, and subtitle types.
-
 
 Current build status
 ====================
