@@ -37,7 +37,7 @@ requirements:
       then: uchardet
     - vapoursynth
     - yt-dlp
-    - xz
+    - liblzma-devel
     - zlib
     - libplacebo
   run:
