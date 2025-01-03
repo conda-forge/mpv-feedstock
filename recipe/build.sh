@@ -12,10 +12,16 @@ if [[ "${target_platform}" == osx-* ]]; then
 fi
 
 meson setup build \
-    -Dhtml-build=enabled \
+    -Dhtml-build=disabled \
+    -Dmanpage-build=disabled \
+    -Dswift-build=disabled \
+    -Dcocoa=disabled \
     -Dlibmpv=true \
     -Dlibarchive=enabled \
     -Dzimg=disabled \
+    -Dmacos-11-3-features=disabled \
+    -Dmacos-11-features=disabled \
+    -Dmacos-12-features=disabled \
     --sysconfdir=${PREFIX}/etc \
     --datadir=${PREFIX}/share \
     --prefix=${PREFIX} \
