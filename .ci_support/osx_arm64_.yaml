@@ -18,8 +18,12 @@ cxx_compiler:
 - clangxx
 cxx_compiler_version:
 - '18'
+expat:
+- '2'
 ffmpeg:
 - '7'
+freetype:
+- '2'
 lcms2:
 - '2'
 libarchive:
