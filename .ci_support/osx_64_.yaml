@@ -27,7 +27,7 @@ freetype:
 lcms2:
 - '2'
 libarchive:
-- '3.7'
+- '3.8'
 libiconv:
 - '1'
 libjpeg_turbo:
