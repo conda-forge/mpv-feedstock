@@ -9,9 +9,11 @@ package:
 source:
   url: https://github.com/mpv-player/mpv/archive/refs/tags/v${{ version }}.tar.gz
   sha256: 10a0f4654f62140a6dd4d380dcf0bbdbdcf6e697556863dc499c296182f081a3
+  patches:
+    - fix-ffmpeg8.patch
 
 build:
-  number: 0
+  number: 1
   skip: win
 
 requirements:
