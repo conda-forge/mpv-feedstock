@@ -1,6 +1,6 @@
 context:
   name: mpv
-  version: "0.40.0"
+  version: "0.41.0"
 
 package:
   name: ${{ name|lower }}
@@ -8,12 +8,12 @@ package:
 
 source:
   url: https://github.com/mpv-player/mpv/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: 10a0f4654f62140a6dd4d380dcf0bbdbdcf6e697556863dc499c296182f081a3
+  sha256: ee21092a5ee427353392360929dc64645c54479aefdb5babc5cfbb5fad626209
   patches:
     - fix-ffmpeg8.patch
 
 build:
-  number: 1
+  number: 0
   skip: win
 
 requirements:
