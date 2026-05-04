@@ -34,6 +34,8 @@ libjpeg_turbo:
 - '3'
 liblzma_devel:
 - '5'
+libplacebo:
+- '7.360'
 macos_machine:
 - x86_64-apple-darwin13.4.0
 macos_min_version:

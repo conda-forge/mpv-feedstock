@@ -32,6 +32,8 @@ libjpeg_turbo:
 - '3'
 liblzma_devel:
 - '5'
+libplacebo:
+- '7.360'
 target_platform:
 - linux-aarch64
 zip_keys:
