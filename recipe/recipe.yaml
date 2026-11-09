@@ -11,6 +11,7 @@ source:
   sha256: bcfebbfa2b65a6d88dc97ea18117831072373e38b5785a2afb874ed4df5070dd
   patches:
     - fix-ffmpeg8.patch
+    - fix-strcspn-macro.patch
 
 build:
   number: 0
@@ -24,7 +25,7 @@ requirements:
     - meson
     - ninja
     - cmake
-    - pkg-config
+    - pkgconf
     # - docutils
   host:
     - ffmpeg
