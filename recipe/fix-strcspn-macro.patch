@@ -1,0 +1,15 @@
+glibc 2.17's <bits/string2.h> defines strcspn as a 2-argument macro; the
+compound literal argument contains a comma and breaks macro expansion.
+Parenthesise the name to call the function directly.
+
+--- a/player/screenshot.c	2026-11-09 13:27:37
++++ b/player/screenshot.c	2026-11-09 13:27:38
+@@ -233,7 +233,7 @@
+         case 't': {
+             char tfmt = *template;
+             // Translate common extensions to the closest alternative.
+-            size_t i = strcspn("sklPaAbBcCdDeFgGhHIjmMnprRStTuUVwWxXyYzZ%", (char[]){tfmt, '\0'});
++            size_t i = (strcspn)("sklPaAbBcCdDeFgGhHIjmMnprRStTuUVwWxXyYzZ%", (char[]){tfmt, '\0'});
+             tfmt =             "sHIpaAbBcCdDeFgGhHIjmMnprRStTuUVwWxXyYzZ%"[i];
+             if (!tfmt || !local_time)
+                 goto error_exit;
